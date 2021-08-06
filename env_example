@@ -1,0 +1,2 @@
+DATABASE_CONNECTION_STRING=mongodb://root:b9sistema@localhost:27018
+TOKEN_KEY=$2y$12$qfwuO9sHzfgoPiR33rvQDeAeNHacuVqIeKYyRizpwkfD8pDbk6sY6 

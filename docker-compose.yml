@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: b9sistema
+    restart: always
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-db-b9:/data/db
+    networks:
+      - b9-network
+
+volumes:
+  mongo-db-b9:
+
+networks:
+  b9-network:
+    driver: bridge
